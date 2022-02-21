@@ -20,9 +20,8 @@ export  function HeaderPage(){
   }
 
   return(
-    <>
     <Header>
-      <img src="/img/logo.png" alt="" />
+      <img src="/public/assets/img/logo.png" alt="" />
       <Nav>
         <ul className={classNameUl}>
           <li><a href="#home">Home</a> <hr/></li>
@@ -40,6 +39,5 @@ export  function HeaderPage(){
       </Nav>
       
     </Header>
-    </>
   )
 }

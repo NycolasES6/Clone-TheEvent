@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const Header = styled.header`
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,7 +9,6 @@ export const Header = styled.header`
 
   height: 90px;
   width: 100vw;
-  border-bottom: 2px solid white;
   padding:0 15px;
 
   color: white;
@@ -26,6 +26,7 @@ export const Header = styled.header`
 
 export const Nav = styled.nav`
   ul{
+    display: inline;
     width: 100%;
     list-style: none;
     font-family: "Roboto-Medium";
@@ -40,10 +41,10 @@ export const Nav = styled.nav`
     }
   }li+li{margin-left:25px;}
   li hr{
-    height: 1px;
-    background-color:#ff004c;
+    height: 2px;
+    background-color:#ffffffd2;
     width: 0px;
-    border: 1px solid #ff004c;
+    border: none;
     transition: all .5s;
   }
   li:hover hr{
@@ -69,17 +70,16 @@ export const Nav = styled.nav`
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color:#ff004c39;
+      background-color:#17001ad5;
       border-radius: 10px;
 
       &.hide{
       opacity: 0 ;
       transform: scale(.9);
-      position: ;
+      display:none;
       }&.show{
         opacity: 1 ;
         transform: scale(1);
-        display: inline;
       }
     }
 
@@ -99,3 +99,4 @@ export const Nav = styled.nav`
     }
   }
 `
+
