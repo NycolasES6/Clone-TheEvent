@@ -5,7 +5,7 @@ import Header from '../../components/Header';
 import Apresentation from '../../sections/Apresentation';
 import About from '../../sections/About';
 import Speakers from '../../sections/Speakers';
-
+import Schedule from '../../sections/Schedule';
 
 const Home: React.FC = () => {
   return <Container>
@@ -13,6 +13,7 @@ const Home: React.FC = () => {
     <Apresentation/>
     <About/>
     <Speakers/>
+    <Schedule/>
   </Container>;
 }
 
